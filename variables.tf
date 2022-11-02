@@ -26,12 +26,19 @@ variable "description" {
   description = "Organization Description"
 }
 
-variable "projects" {
+variable "tenants" {
   type = map(object({
     name        = string
     description = string
+    repositories = map(object({
+      name         = string
+      description  = string
+      dependencies = list(string)
+      variables    = map(string)
+      files        = map(string)
+    }))
   }))
   default     = {}
   sensitive   = false
-  description = "Organization Projects"
+  description = "Organization Tenants"
 }
