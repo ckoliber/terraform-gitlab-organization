@@ -2,28 +2,28 @@ variable "group_id" {
   type        = number
   default     = 0
   sensitive   = false
-  description = "Gitlab Group ID"
+  description = "Group ID"
 }
 
 variable "path" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Gitlab Organization Path"
+  description = "Organization Path"
 }
 
 variable "name" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Gitlab Organization Name"
+  description = "Organization Name"
 }
 
 variable "description" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Gitlab Organization Description"
+  description = "Organization Description"
 }
 
 variable "projects" {
@@ -33,5 +33,5 @@ variable "projects" {
   }))
   default     = {}
   sensitive   = false
-  description = "Gitlab Organization Projects"
+  description = "Organization Projects"
 }
