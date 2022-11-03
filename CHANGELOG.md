@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/cktf/terraform-gitlab-organization/compare/1.1.0...1.1.1) (2022-11-03)
+
+
+### Bug Fixes
+
+* remove dependencies ([eb703f9](https://github.com/cktf/terraform-gitlab-organization/commit/eb703f97e337fb0512654bcc394a6c28da03693a))
+
 # [1.1.0](https://github.com/cktf/terraform-gitlab-organization/compare/1.0.0...1.1.0) (2022-11-03)
 
 
