@@ -20,18 +20,55 @@ terraform init
 module "organization" {
   source = "cktf/organization/gitlab"
 
-  group_id    = "<PARENT_GROUP_ID>"
-  path        = "myapp"
+  group_id    = 0
+  path        = "myorg"
   name        = "My Organization"
   description = "My Organization Group"
-  projects = {
-    react = {
-      name        = "React"
-      description = "React Project"
+  teams = {
+    backend = {
+      name        = "Backend"
+      description = "Backend Team"
     }
-    nodejs = {
+    frontend = {
+      name        = "Frontend"
+      description = "Frontend Team"
+    }
+  }
+  repositories = {
+    application = {
+      team        = ""
+      name        = "Application"
+      description = "Application Repository"
+      deploy_keys = {}
+      secrets     = {}
+    }
+    backend_nodejs = {
+      team        = "backend"
       name        = "NodeJS"
-      description = "NodeJS Project"
+      description = "NodeJS Repository"
+      deploy_keys = {}
+      secrets     = {}
+    }
+    backend_golang = {
+      team        = "backend"
+      name        = "Golang"
+      description = "Golang Repository"
+      deploy_keys = {}
+      secrets     = {}
+    }
+    frontend_react = {
+      team        = "frontend"
+      name        = "React"
+      description = "React Repository"
+      deploy_keys = {}
+      secrets     = {}
+    }
+    frontend_vuejs = {
+      team        = "frontend"
+      name        = "VueJS"
+      description = "VueJS Repository"
+      deploy_keys = {}
+      secrets     = {}
     }
   }
 }
