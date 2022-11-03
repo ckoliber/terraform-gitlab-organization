@@ -26,19 +26,34 @@ variable "description" {
   description = "Organization Description"
 }
 
-variable "tenants" {
+variable "teams" {
   type = map(object({
     name        = string
     description = string
-    repositories = map(object({
-      name         = string
-      description  = string
-      dependencies = list(string)
-      variables    = map(string)
-      files        = map(string)
+  }))
+  default     = {}
+  sensitive   = false
+  description = "Organization Teams"
+}
+
+variable "repositories" {
+  type = map(object({
+    team         = string
+    name         = string
+    description  = string
+    dependencies = list(string)
+    deploy_keys = map(object({
+      key   = string
+      push  = bool
+      title = string
+    }))
+    secrets = map(object({
+      type      = string
+      value     = string
+      protected = bool
     }))
   }))
   default     = {}
   sensitive   = false
-  description = "Organization Tenants"
+  description = "Organization Repositories"
 }

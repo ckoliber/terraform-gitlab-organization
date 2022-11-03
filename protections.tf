@@ -1,5 +1,5 @@
 resource "gitlab_branch_protection" "maintenance" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "*.*.*"
@@ -8,7 +8,7 @@ resource "gitlab_branch_protection" "maintenance" {
 }
 
 resource "gitlab_branch_protection" "master" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "master"
@@ -18,7 +18,7 @@ resource "gitlab_branch_protection" "master" {
 }
 
 resource "gitlab_branch_protection" "main" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "main"
@@ -28,7 +28,7 @@ resource "gitlab_branch_protection" "main" {
 }
 
 resource "gitlab_branch_protection" "next" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "next"
@@ -38,7 +38,7 @@ resource "gitlab_branch_protection" "next" {
 }
 
 resource "gitlab_branch_protection" "beta" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "beta"
@@ -48,7 +48,7 @@ resource "gitlab_branch_protection" "beta" {
 }
 
 resource "gitlab_branch_protection" "alpha" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project            = gitlab_project.this[each.key].id
   branch             = "alpha"
@@ -58,7 +58,7 @@ resource "gitlab_branch_protection" "alpha" {
 }
 
 resource "gitlab_tag_protection" "this" {
-  for_each = var.projects
+  for_each = var.repositories
 
   project             = gitlab_project.this[each.key].id
   tag                 = "*"
