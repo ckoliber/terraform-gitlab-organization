@@ -1,7 +1,7 @@
 resource "gitlab_project" "this" {
   for_each = var.repositories
 
-  namespace_id = gitlab_group.this[each.value.team].id
+  namespace_id = each.value.team != "" ? gitlab_group.this[each.value.team].id : gitlab_group.parent.id
   path         = split("_", each.key)[length(split("_", each.key)) - 1]
   name         = each.value.name
   description  = each.value.description

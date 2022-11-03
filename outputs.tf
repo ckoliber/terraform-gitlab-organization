@@ -1,10 +1,5 @@
 output "repositories" {
-  value = {
-    for key, value in var.repositories : key => {
-      id  = gitlab_project.this[key].id
-      key = tls_private_key.this[key].public_key_openssh
-    }
-  }
+  value       = { for key, val in var.repositories : key => gitlab_project.this[key].id }
   sensitive   = false
   description = "Organization Repositories"
 }

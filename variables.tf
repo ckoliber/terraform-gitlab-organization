@@ -38,10 +38,9 @@ variable "teams" {
 
 variable "repositories" {
   type = map(object({
-    team         = string
-    name         = string
-    description  = string
-    dependencies = list(string)
+    team        = string
+    name        = string
+    description = string
     deploy_keys = map(object({
       key   = string
       push  = bool
