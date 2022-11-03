@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/cktf/terraform-gitlab-organization/compare/1.1.1...1.1.2) (2022-11-03)
+
+
+### Bug Fixes
+
+* change clear team prefix from repositories key pattern ([b96e102](https://github.com/cktf/terraform-gitlab-organization/commit/b96e1023e92762e0fe01fb7f1b357990c26aebd5))
+
 ## [1.1.1](https://github.com/cktf/terraform-gitlab-organization/compare/1.1.0...1.1.1) (2022-11-03)
 
 
