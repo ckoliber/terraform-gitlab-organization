@@ -9,21 +9,21 @@ variable "path" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Organization Path"
+  description = "Application Path"
 }
 
 variable "name" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Organization Name"
+  description = "Application Name"
 }
 
 variable "description" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Organization Description"
+  description = "Application Description"
 }
 
 variable "teams" {
@@ -33,7 +33,7 @@ variable "teams" {
   }))
   default     = {}
   sensitive   = false
-  description = "Organization Teams"
+  description = "Application Teams"
 }
 
 variable "repositories" {
@@ -54,5 +54,5 @@ variable "repositories" {
   }))
   default     = {}
   sensitive   = false
-  description = "Organization Repositories"
+  description = "Application Repositories"
 }

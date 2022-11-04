@@ -1,10 +1,10 @@
-# Terraform Gitlab Organization
+# Terraform Gitlab Application
 
-![pipeline](https://github.com/cktf/terraform-gitlab-organization/actions/workflows/cicd.yml/badge.svg)
-![release](https://img.shields.io/github/v/release/cktf/terraform-gitlab-organization?display_name=tag)
-![license](https://img.shields.io/github/license/cktf/terraform-gitlab-organization)
+![pipeline](https://github.com/cktf/terraform-gitlab-application/actions/workflows/cicd.yml/badge.svg)
+![release](https://img.shields.io/github/v/release/cktf/terraform-gitlab-application?display_name=tag)
+![license](https://img.shields.io/github/license/cktf/terraform-gitlab-application)
 
-**Organization** is a Terraform module useful for creating multiple subgroups and projects in **Gitlab**
+**Application** is a Terraform module useful for creating multiple subgroups and projects in **Gitlab**
 
 ## Installation
 
@@ -17,13 +17,13 @@ terraform init
 ## Usage
 
 ```hcl
-module "organization" {
-  source = "cktf/organization/gitlab"
+module "application" {
+  source = "cktf/application/gitlab"
 
   group_id    = 0
   path        = "myorg"
-  name        = "My Organization"
-  description = "My Organization Group"
+  name        = "My Application"
+  description = "My Application Group"
   teams = {
     backend = {
       name        = "Backend"
