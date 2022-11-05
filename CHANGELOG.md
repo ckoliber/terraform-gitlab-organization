@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/cktf/terraform-gitlab-application/compare/1.1.3...1.2.0) (2022-11-05)
+
+
+### Features
+
+* add application group id to output values ([ec419c4](https://github.com/cktf/terraform-gitlab-application/commit/ec419c4b21fc104d5c02a08739771db08d48d05b))
+
 ## [1.1.3](https://github.com/cktf/terraform-gitlab-application/compare/1.1.2...1.1.3) (2022-11-04)
 
 
