@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/cktf/terraform-gitlab-application/compare/1.1.2...1.1.3) (2022-11-04)
+
+
+### Bug Fixes
+
+* change organization name to application ([ce46d34](https://github.com/cktf/terraform-gitlab-application/commit/ce46d34c4251f65d132c588a96aabdcb088acc06))
+
 ## [1.1.2](https://github.com/cktf/terraform-gitlab-application/compare/1.1.1...1.1.2) (2022-11-03)
 
 
