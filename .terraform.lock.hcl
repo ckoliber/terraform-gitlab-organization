@@ -3,7 +3,7 @@
 
 provider "registry.terraform.io/gitlabhq/gitlab" {
   version     = "3.18.0"
-  constraints = "~> 3.18.0"
+  constraints = ">= 3.10.0"
   hashes = [
     "h1:YcQw1GDEp0UVSfXweVBr69on33ypBY13kG+lTeCSSx8=",
     "zh:1c3e89cf19118fc07d7b04257251fc9897e722c16e0a0df7b07fcd261f8c12e7",
