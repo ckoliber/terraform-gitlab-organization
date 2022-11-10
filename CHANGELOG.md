@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/cktf/terraform-gitlab-application/compare/1.2.0...1.3.0) (2022-11-10)
+
+
+### Features
+
+* upgrade dependencies ([7b0f2df](https://github.com/cktf/terraform-gitlab-application/commit/7b0f2df915a376a3951144dd9c4992cd7f21a5a9))
+
 # [1.2.0](https://github.com/cktf/terraform-gitlab-application/compare/1.1.3...1.2.0) (2022-11-05)
 
 
