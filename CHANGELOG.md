@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/cktf/terraform-gitlab-application/compare/1.3.0...1.3.1) (2022-11-10)
+
+
+### Bug Fixes
+
+* change version constraints ([5572089](https://github.com/cktf/terraform-gitlab-application/commit/55720899d1e064c6375180d978735d4a5846b5b8))
+
 # [1.3.0](https://github.com/cktf/terraform-gitlab-application/compare/1.2.0...1.3.0) (2022-11-10)
 
 
