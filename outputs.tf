@@ -1,11 +1,17 @@
 output "id" {
-  value       = gitlab_group.parent.id
+  value       = local.org_id
   sensitive   = false
-  description = "Application ID"
+  description = "Organization ID"
 }
 
-output "repositories" {
-  value       = { for key, val in var.repositories : key => gitlab_project.this[key].id }
+output "groups" {
+  value       = { for key, val in gitlab_group.this : key => val.id }
   sensitive   = false
-  description = "Application Repositories"
+  description = "Organization Groups"
+}
+
+output "projects" {
+  value       = { for key, val in gitlab_project.this : key => val.id }
+  sensitive   = false
+  description = "Organization Projects"
 }

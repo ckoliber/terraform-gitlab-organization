@@ -1,58 +1,73 @@
-variable "group_id" {
+variable "id" {
   type        = number
-  default     = 0
+  default     = null
   sensitive   = false
-  description = "Group ID"
+  description = "Organization ID"
+}
+
+variable "parent_id" {
+  type        = number
+  default     = null
+  sensitive   = false
+  description = "Organization Parent ID"
 }
 
 variable "path" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Application Path"
+  description = "Organization Path"
 }
 
 variable "name" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Application Name"
+  description = "Organization Name"
 }
 
-variable "description" {
+variable "desc" {
   type        = string
   default     = ""
   sensitive   = false
-  description = "Application Description"
+  description = "Organization Description"
 }
 
-variable "teams" {
+variable "groups" {
   type = map(object({
-    name        = string
-    description = string
+    path = string
+    name = string
+    desc = string
+    variables = optional(map(object({
+      type  = string
+      value = string
+      scope = optional(string)
+    })), {})
   }))
   default     = {}
   sensitive   = false
-  description = "Application Teams"
+  description = "Organization Groups"
 }
 
-variable "repositories" {
+variable "projects" {
   type = map(object({
-    team        = string
-    name        = string
-    description = string
-    deploy_keys = map(object({
+    path    = string
+    name    = string
+    desc    = string
+    group   = optional(string)
+    readers = optional(list(string), [])
+    variables = optional(map(object({
+      type  = string
+      value = string
+      scope = optional(string)
+    })), {})
+    deploy_keys = optional(map(object({
       key   = string
       push  = bool
       title = string
-    }))
-    secrets = map(object({
-      type      = string
-      value     = string
-      protected = bool
-    }))
+    })), {})
   }))
   default     = {}
   sensitive   = false
-  description = "Application Repositories"
+  description = "Organization Projects"
 }
