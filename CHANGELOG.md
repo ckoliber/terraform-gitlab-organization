@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.0...2.0.1) (2024-08-31)
+
+
+### Bug Fixes
+
+* change terraform version in CI/CD ([0a25c35](https://github.com/cktf/terraform-gitlab-organization/commit/0a25c35dc4448c36dd7a6b21388ae37a87ab1dda))
+
 # [2.0.0](https://github.com/cktf/terraform-gitlab-organization/compare/1.3.1...2.0.0) (2024-08-31)
 
 
