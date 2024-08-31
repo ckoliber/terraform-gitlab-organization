@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.1...2.0.2) (2024-08-31)
+
+
+### Bug Fixes
+
+* change docs ([2486733](https://github.com/cktf/terraform-gitlab-organization/commit/248673349a9d224881038d799cce51eebed059d4))
+
 ## [2.0.1](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.0...2.0.1) (2024-08-31)
 
 
