@@ -14,9 +14,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
-            - uses: hashicorp/setup-terraform@v1
+            - uses: hashicorp/setup-terraform@v3
               with:
-                  terraform_version: "1.6.5"
+                  terraform_version: "1.9.5"
             - uses: actions/cache@v2
               with:
                   path: .terraform/
