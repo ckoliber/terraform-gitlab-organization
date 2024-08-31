@@ -27,7 +27,7 @@ jobs:
             - run: terraform validate -no-color
 
     bump:
-        needs: test
+        needs: build
         runs-on: ubuntu-latest
         if: github.event_name == 'push'
         steps:
