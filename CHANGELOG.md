@@ -1,3 +1,20 @@
+# [2.0.0](https://github.com/cktf/terraform-gitlab-organization/compare/1.3.1...2.0.0) (2024-08-31)
+
+
+### Bug Fixes
+
+* change CI ([b249606](https://github.com/cktf/terraform-gitlab-organization/commit/b24960605fa3fc7be0a79f3aee1ef1b99afb47cc))
+
+
+### Features
+
+* add new version ([1e4df2c](https://github.com/cktf/terraform-gitlab-organization/commit/1e4df2ca2e5af55b55c59ee6819fe07a7238c725))
+
+
+### BREAKING CHANGES
+
+* organization structure
+
 ## [1.3.1](https://github.com/cktf/terraform-gitlab-application/compare/1.3.0...1.3.1) (2022-11-10)
 
 
