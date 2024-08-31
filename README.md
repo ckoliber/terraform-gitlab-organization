@@ -1,10 +1,10 @@
-# Terraform Gitlab Application
+# Terraform Gitlab Organization
 
-![pipeline](https://github.com/cktf/terraform-gitlab-application/actions/workflows/cicd.yml/badge.svg)
-![release](https://img.shields.io/github/v/release/cktf/terraform-gitlab-application?display_name=tag)
-![license](https://img.shields.io/github/license/cktf/terraform-gitlab-application)
+![pipeline](https://github.com/cktf/terraform-gitlab-organization/actions/workflows/cicd.yml/badge.svg)
+![release](https://img.shields.io/github/v/release/cktf/terraform-gitlab-organization?display_name=tag)
+![license](https://img.shields.io/github/license/cktf/terraform-gitlab-organization)
 
-**Application** is a Terraform module useful for creating multiple subgroups and projects in **Gitlab**
+**Organization** is a Terraform module useful for creating multiple groups and projects in **Gitlab**
 
 ## Installation
 
@@ -17,58 +17,44 @@ terraform init
 ## Usage
 
 ```hcl
-module "application" {
-  source = "cktf/application/gitlab"
+module "gitlab" {
+  source = "cktf/organization/gitlab"
 
-  group_id    = 0
-  path        = "myorg"
-  name        = "My Application"
-  description = "My Application Group"
-  teams = {
+  path = "myorg"
+  name = "My Org"
+  desc = "My Org Team"
+
+  groups = {
     backend = {
-      name        = "Backend"
-      description = "Backend Team"
+      path = "backend"
+      name = "Backend"
+      desc = "Backend Team"
     }
     frontend = {
-      name        = "Frontend"
-      description = "Frontend Team"
+      path = "frontend"
+      name = "Frontend"
+      desc = "Frontend Team"
     }
   }
-  repositories = {
-    application = {
-      team        = ""
-      name        = "Application"
-      description = "Application Repository"
-      deploy_keys = {}
-      secrets     = {}
+
+  projects = {
+    backend1 = {
+      path  = "backend1"
+      name  = "Backend1"
+      desc  = "Backend1 Project"
+      group = "backend"
     }
-    backend_nodejs = {
-      team        = "backend"
-      name        = "NodeJS"
-      description = "NodeJS Repository"
-      deploy_keys = {}
-      secrets     = {}
+    frontend1 = {
+      path  = "frontend1"
+      name  = "Frontend1"
+      desc  = "Frontend1 Project"
+      group = "frontend"
     }
-    backend_golang = {
-      team        = "backend"
-      name        = "Golang"
-      description = "Golang Repository"
-      deploy_keys = {}
-      secrets     = {}
-    }
-    frontend_react = {
-      team        = "frontend"
-      name        = "React"
-      description = "React Repository"
-      deploy_keys = {}
-      secrets     = {}
-    }
-    frontend_vuejs = {
-      team        = "frontend"
-      name        = "VueJS"
-      description = "VueJS Repository"
-      deploy_keys = {}
-      secrets     = {}
+    frontend2 = {
+      path  = "frontend2"
+      name  = "Frontend2"
+      desc  = "Frontend2 Project"
+      group = "frontend"
     }
   }
 }
