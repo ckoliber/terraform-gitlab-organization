@@ -33,6 +33,17 @@ variable "desc" {
   description = "Organization Description"
 }
 
+variable "variables" {
+  type = map(object({
+    type  = string
+    value = string
+    scope = optional(string)
+  }))
+  default     = {}
+  sensitive   = false
+  description = "Organization Variables"
+}
+
 variable "groups" {
   type = map(object({
     path = string
