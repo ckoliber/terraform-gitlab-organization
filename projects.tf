@@ -91,7 +91,7 @@ resource "gitlab_project_variable" "this" {
 
   project           = gitlab_project.this[each.value.project].id
   environment_scope = coalesce(each.value.xval.scope, "*")
-  key               = each.value.key
+  key               = each.value.xkey
   value             = each.value.xval.value
   masked            = can(regex("\\A\\w{8,}\\z", each.value.xval.value))
   protected         = each.value.xval.scope != null
@@ -102,7 +102,7 @@ resource "gitlab_deploy_key" "this" {
   for_each = {
     for item in flatten([
       for key, val in var.projects : [
-        for xkey, xval in val.variables : {
+        for xkey, xval in val.deploy_keys : {
           key = "${key}_${xkey}"
           value = {
             project = key
