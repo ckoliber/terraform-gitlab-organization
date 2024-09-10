@@ -9,5 +9,5 @@ resource "gitlab_group" "root" {
 }
 
 locals {
-  org_id = coalesce(var.id, gitlab_group.root[0].id)
+  org_id = try(gitlab_group.root[0].id, var.id)
 }
