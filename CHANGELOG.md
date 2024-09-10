@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.3...2.0.4) (2024-09-10)
+
+
+### Bug Fixes
+
+* project variables, deploy_keys var name ([b72d94b](https://github.com/cktf/terraform-gitlab-organization/commit/b72d94b3f34cb00a10aab7df50f7745788ce7b32))
+
 ## [2.0.3](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.2...2.0.3) (2024-09-10)
 
 
