@@ -12,7 +12,7 @@ locals {
   org_id = try(gitlab_group.root[0].id, var.id)
 }
 
-resource "gitlab_group_variable" "this" {
+resource "gitlab_group_variable" "root" {
   for_each = var.variables
 
   group             = local.org_id
