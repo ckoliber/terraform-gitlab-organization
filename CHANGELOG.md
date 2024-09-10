@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.2...2.0.3) (2024-09-10)
+
+
+### Bug Fixes
+
+* change organization optional rule ([2cc6c04](https://github.com/cktf/terraform-gitlab-organization/commit/2cc6c04b51497493c742839587cf33db864ab551))
+
 ## [2.0.2](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.1...2.0.2) (2024-08-31)
 
 
