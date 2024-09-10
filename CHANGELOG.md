@@ -1,3 +1,15 @@
+# [2.1.0](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.4...2.1.0) (2024-09-10)
+
+
+### Bug Fixes
+
+* change organization variables resource name ([25957d9](https://github.com/cktf/terraform-gitlab-organization/commit/25957d98eca55fa518ee28d2c02de5e1c674299d))
+
+
+### Features
+
+* add organization variables ([4fc149d](https://github.com/cktf/terraform-gitlab-organization/commit/4fc149d56df497e46a6f97694ac3c64d4603bffa))
+
 ## [2.0.4](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.3...2.0.4) (2024-09-10)
 
 
