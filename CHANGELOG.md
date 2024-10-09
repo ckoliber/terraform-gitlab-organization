@@ -1,3 +1,10 @@
+## [2.1.1](https://github.com/cktf/terraform-gitlab-organization/compare/2.1.0...2.1.1) (2024-10-09)
+
+
+### Bug Fixes
+
+* upgrade CI/CD ([6147411](https://github.com/cktf/terraform-gitlab-organization/commit/61474115801c6afb77cc616deb9a0222d220b413))
+
 # [2.1.0](https://github.com/cktf/terraform-gitlab-organization/compare/2.0.4...2.1.0) (2024-09-10)
 
 
