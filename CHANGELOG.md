@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/cktf/terraform-gitlab-organization/compare/2.1.1...2.2.0) (2025-02-22)
+
+
+### Features
+
+* add new CI ([b127b04](https://github.com/cktf/terraform-gitlab-organization/commit/b127b04d17160364244aca549d94f1cd3b64e4a0))
+
 ## [2.1.1](https://github.com/cktf/terraform-gitlab-organization/compare/2.1.0...2.1.1) (2024-10-09)
 
 
