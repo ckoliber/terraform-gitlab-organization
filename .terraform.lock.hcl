@@ -2,24 +2,37 @@
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/gitlabhq/gitlab" {
-  version     = "17.3.1"
+  version     = "17.9.0"
   constraints = ">= 17.3.0"
   hashes = [
-    "h1:npopqCKoOD0EKXVKO/SvPzXEOc8qgGQwUVtRaNsZ1hY=",
-    "zh:168f21fcd44b6641402ff39b510e74934cfadb9e846089ce2ea786d1941cbd5e",
-    "zh:1716f817860f03d29c387ba72889fe86d60d2be61d2c6724e1adc996746e8b76",
-    "zh:591f992113224c10aaf477b57e70d5587e5392a52eb60dab27f5a19a64f79b62",
-    "zh:5cb214d2145b220380b1e9fed5fafaef99656e82e249792c5ea993ae9ebd2a79",
-    "zh:6ac44676de74aa64831cb3448e2f5ef9aa7fa5f734cbafb9fb9c4253dadad470",
-    "zh:7054d827587e9b888f1efa4856f724e804817947cd044705d41a3a6f9267cf54",
-    "zh:76f9b4a24249d4f7b35f5b3f16ed3d03a5455dfa7d4121eb849badeea866d0bf",
-    "zh:8a9b3a7ab650469a034187eb6de32bcda7657b1cb5e2c0e8624a58103354d349",
-    "zh:9bc918e1516c2d9979984dc731d8ddb5f8ab2f38ca68f4a2a04167c168e2f760",
-    "zh:9ed6078fb395a263576231a09da2e682e8335f1766925a45e684d4c58e2117c5",
-    "zh:a5c1a79952895b41a7afca46b80289ed280105c6c4b46849b26a3c13e6bd62c2",
-    "zh:bee418208f7838623cdc58050dc4b3be4f384a5f28cea91d22c96ededb1c8c12",
-    "zh:cf47b1dbb62573aa4be9d56cf36587637c26d299ccb229f2aaad8b2ea3dfac88",
-    "zh:d1737b1ba7aba3a18ea7402631d222bbfe37df8b97b7f5c6d2d6cc94f234184c",
+    "h1:+CJrTH2UaLngmMx6LRirUK1TO+xwrhvPCC4rlJI0lj4=",
+    "h1:2TL3L7L6efP/X2ReYOmBZL65llkbze1KjTmFRVZR3fI=",
+    "h1:C7Y/oMJw3+70ywNYmMttabv7HlTxMPJysK1egbSZZpI=",
+    "h1:LPf+sRVSDW9U95KyIM6R3e9fIo0KtFM9hvJkbe/Cuhg=",
+    "h1:R1QhLiFsckFttQDAcLDqpvFAnu3nOLFXW4QtZ8lhXQ0=",
+    "h1:aRikYpBcQKe7ZVq263R3lwo4DawGw1rMJnxnUzvDGUA=",
+    "h1:fOLkxMi69XiLgAEBBqNvf7RwVAgyHjDQpgBg1msmYcY=",
+    "h1:mVYfF+4UtQ5FYZR3lcfZZC9cCpLEtb4Ajlj0QULDEXM=",
+    "h1:o/F981IxM5BcY77xSKshC6kkYxYAEQ0HSJzUrC72zsM=",
+    "h1:raR4dKK3hbPFeqf5+22ZQj0ukZd1TyEtmwhy7NoYRgY=",
+    "h1:ulm4DneGmCySerJgZfierGC30/3aNflKeQ1iHb5Mj08=",
+    "h1:vFFMVzgLE/YY86mSxqrMBbtiIfP3Jtx4aQLQGtNFntA=",
+    "h1:wBIzMhLhAesjT1xhxbhh9f67BrwBO6LcOhj1WS5DlxQ=",
+    "h1:xTTLTGbdmDSKZRajfdI0YT8uR5M6LwWdaovKi1xR07U=",
+    "zh:08b4a0f843f592f338e403293063150a47e6daa682d38541b6418591a71aa6b2",
+    "zh:0c174c227b8721b08908e285db2cf791e848ceb55759cca67aaee19d9df65d6f",
+    "zh:244f74e4ab3688aee5d2b027cfb9c6a368a9195c0aa38c54c3fbc19d2b3c12f9",
+    "zh:2891429d88037f44095c499a3d1c9a6423b3bd735786010c15b1d9c0bd2cc97a",
+    "zh:30b6d94925694f9e01f2adeb41544a9eaaac96872fb693b0594a8765f7b2e609",
+    "zh:40443f62958d4b4038da6abd1aabd699eda25bc12e8829f91585a25a0e357bae",
+    "zh:426d3927e7453532b5a1ce2e9a1c16bff4e032588a6f89b0647aceb3dd69739b",
+    "zh:484dbc9e1003d9ff910fa051ac78e69be147e4b7b6d47d11d66bfcb1d10cb5c2",
+    "zh:7d2e346993455432397ebb990df250e7d9b17a5f4a50816dd2d7c75c36801dd6",
+    "zh:7ebcd477c2b2f584333157aeb1069a0f716085369cd6e6ec27743a40bf07a556",
+    "zh:8c044f75d8c5d782d8bc99dc98ad51073bebefc01c634a62445b6979ed74ed30",
+    "zh:cc7c45e16a1de4781995b5ed5bd5e809e93a9eb72b8a5eee36af7d69c0425ae9",
+    "zh:d61be2db1a189106c5b938164e048a4511d53f7d48ce7e085315990f0513de0e",
+    "zh:e7ffc57a3bea1cf52ebc089ede569c2ee3442b28ba42dd1ae239b3daeb557fc2",
     "zh:f809ab383cca0a5f83072981c64208cbd7fa67e986a86ee02dd2c82333221e32",
   ]
 }
