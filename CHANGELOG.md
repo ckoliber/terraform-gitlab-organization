@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/ckoliber/terraform-gitlab-organization/compare/2.2.0...2.3.0) (2025-07-26)
+
+
+### Features
+
+* transfer project from cktf to ckoliber ([ab80c28](https://github.com/ckoliber/terraform-gitlab-organization/commit/ab80c2808850761470ae5931ffb033076ab8e28c))
+
 # [2.2.0](https://github.com/ckoliber/terraform-gitlab-organization/compare/2.1.1...2.2.0) (2025-02-22)
 
 
