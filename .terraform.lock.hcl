@@ -3,21 +3,12 @@
 
 provider "registry.terraform.io/gitlabhq/gitlab" {
   version     = "18.11.0"
-  constraints = ">= 17.3.0"
+  constraints = ">= 17.3.0, < 19.0.0"
   hashes = [
-    "h1:+P22nWrgK3ZRvTyFZ68Q/hPgIBb2uIVh7r2QRiwOz3g=",
     "h1:6PVj4IOQjyPiizwpPV9NOhhWXiOUQ/pWhDDkS4g8KSw=",
     "h1:6twdN97qk2HFQSu41KwKjzNKZP7XGYvwIk1JZUdm0B8=",
-    "h1:ESoKJ8yTeKDm2Sh2gFK42i0YDLEvfrO033LvDXEfwTM=",
-    "h1:HU4X3rsCLxpHgtMLaoxanxzkp+Fm61OSTF57QqiNYFM=",
     "h1:JWymmSneHz5yRi0KY4/jcDDiMUFpQizIjt77knQmjSc=",
-    "h1:WmXPDYq/XsNe0nllqKC0bsKCogsrNi71MV5BwXsr4V4=",
-    "h1:bdIqPGLSahmBTFlq18++d3hCLcxdHU4qD4GTHCPFXRo=",
-    "h1:cgyuqtbZIPo5ghcydIXIAP4vrcT2UhgUOh4Fv09y/Ms=",
     "h1:ermJ0poZTOWXLQRmGDgESji1CdSqkkEyyoaRlZVaZQo=",
-    "h1:lmugqBhWVr5/VEq473aczHrdxa/BT1JXmRKiAFPzBd8=",
-    "h1:s3PJGPSICNoinUr6aV9EoYJulP+TvKK0EzScFmFRm0U=",
-    "h1:trn9Jzs3kBujj96HJm17CcGtZrR82qna1eP3IKtaK/E=",
     "zh:00f04e37c82976bb80d93ab605d44a5bff99135a03df018ad5223894f3669339",
     "zh:2fa5c52fe34791fa3b4ab02690cda4be8d9bded4b703575c2542f98fce60f302",
     "zh:307a0498a1cfe9eb69e18362a5362fc02393bba38c3e2febbab4a5bb0335ea76",
