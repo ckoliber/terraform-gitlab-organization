@@ -14,7 +14,7 @@ resource "gitlab_project" "this" {
   archive_on_destroy                               = true
   initialize_with_readme                           = false
   shared_runners_enabled                           = true
-  merge_requests_enabled                           = true
+  merge_requests_access_level                      = "enabled"
   remove_source_branch_after_merge                 = true
   allow_merge_on_skipped_pipeline                  = true
   only_allow_merge_if_pipeline_succeeds            = false
